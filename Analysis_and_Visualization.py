@@ -6,7 +6,7 @@ def topics(ldamodel, corpus, texts):
     a = sorted(a, key=lambda x: (x[1]), reverse=True)
   # Dominant topic, Perc of Contribution (Percentage contribution of each topic to documentation) and Keywords 
     for i, (topic_num, prop) in enumerate(a):
-      if i == 0:  
+      if i == 0:   
         topic_nums = ldamodel.show_topic(topic_num)
         topic_keywords = ", ".join([i for i, _ in topic_nums])
         df = df.append(pd.Series([int(topic_num), round(prop,4), topic_keywords]), ignore_index=True)
