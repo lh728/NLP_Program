@@ -4,7 +4,7 @@ from pprint import pprint
 import gensim, spacy, logging, warnings # gensim,spacy package needs pip install
 import gensim.corpora as corpora
 import seaborn as sns
-import matplotlib.colors as mcolors
+import matplotlib.colors as mcolors 
 '''
 Gensim previously only wrapped the lemmatization routines of another library (Pattern) - 
 this was not a particularly modern/maintained option, so removed from Gensim-4.0
