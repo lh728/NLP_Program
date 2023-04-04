@@ -4,7 +4,7 @@ names = ['talk.politics.mideast', 'sci.electronics', 'soc.religion.christian', '
 docs_to_train = fetch_20newsgroups(subset = 'train', categories= names, shuffle = True, random_state = 1)
 docs_to_test = fetch_20newsgroups(subset = 'test', categories= names, shuffle = True, random_state = 2)
 df_train = pd.DataFrame(docs_to_train.data)
-df_train['target'] = pd.Series(data=docs_to_test.target)
+df_train['target'] = pd.Series(data=docs_to_test.target) 
 df_test = pd.DataFrame(docs_to_test.data)
 df_test['target'] = pd.Series(data=docs_to_test.target)
 df_train.rename(columns = {0:'content'},inplace=True)
