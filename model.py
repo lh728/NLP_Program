@@ -7,7 +7,7 @@ df_train = pd.DataFrame(docs_to_train.data)
 df_train['target'] = pd.Series(data=docs_to_test.target) 
 df_test = pd.DataFrame(docs_to_test.data)
 df_test['target'] = pd.Series(data=docs_to_test.target)
-df_train.rename(columns = {0:'content'},inplace=True)
+df_train.rename(columns = {0:'content'},inplace=True) 
 df_test.rename(columns = {0:'content'},inplace=True)
 
 # set a function to remove emails, newline chars and single quotes
